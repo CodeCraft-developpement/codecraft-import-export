@@ -1,0 +1,8 @@
+plugins {
+    id 'com.axelor.app'
+}
+
+axelor {
+    title "codecraft-import-export"
+    description "CodeCraft Import/export"
+}
