@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<object-views xmlns="http://axelor.com/xml/ns/object-views"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://axelor.com/xml/ns/object-views http://axelor.com/xml/ns/object-views/object-views_7.0.xsd">
+
+  <grid name="codecraft-data-recovery-import-grid" title="Imports"
+    model="org.codecraft.apps.data.recovery.db.Import">
+    <field name="name"/>
+  </grid>
+
+  <form name="codecraft-data-recovery-import-form" title="Import"
+    model="org.codecraft.apps.data.recovery.db.Import" width="large">
+    <panel name="mainPanel">
+      <field name="name" colSpan="12" required="true"/>
+      <panel-related field="ccImportConfiguration"
+        form-view="codecraft-import-configuration-form" grid-view="codecraft-import-configuration-grid" colSpan="12"/>
+    </panel>
+    <panel name="actionPanel" sidebar="true">
+      <button name="importAllBtn" title="Import All" onClick=""/>
+    </panel>
+  </form>
+
+</object-views>

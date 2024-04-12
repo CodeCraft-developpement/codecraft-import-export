@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<object-views xmlns="http://axelor.com/xml/ns/object-views"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://axelor.com/xml/ns/object-views http://axelor.com/xml/ns/object-views/object-views_7.0.xsd">
+
+  <menuitem name="codecraft-data-recovery-menu-item-recovery"
+    parent="codecraft-core-menu-item-root" order="0" title="Recovery" icon="backup"
+    icon-background="#1c4d4a"/>
+
+  <menuitem name="codecraft-data-recovery-menu-item-import"
+    parent="codecraft-data-recovery-menu-item-recovery" order="0" title="Imports"
+    action="codecraft-data-recovery-action-view-import" icon="article_shortcut"
+    icon-background="#1c4d4a"/>
+
+  <action-view name="codecraft-data-recovery-action-view-import" title="Imports"
+    model="org.codecraft.apps.data.recovery.db.Import">
+    <view type="grid" name="codecraft-data-recovery-import-grid"/>
+    <view type="form" name="codecraft-data-recovery-import-form"/>
+  </action-view>
+
+</object-views>

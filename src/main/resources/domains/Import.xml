@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<domain-models xmlns="http://axelor.com/xml/ns/domain-models"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://axelor.com/xml/ns/domain-models http://axelor.com/xml/ns/domain-models/domain-models_7.0.xsd">
+
+  <module name="codecraft-import-export" package="org.codecraft.apps.data.recovery.db"/>
+
+  <entity name="Import">
+
+    <string name="name" namecolumn="true"/>
+    <one-to-many name="ccImportConfiguration" title="Import configurations"
+      ref="com.axelor.apps.base.db.ImportConfiguration" mappedBy="ccImport"/>
+
+  </entity>
+
+</domain-models>
