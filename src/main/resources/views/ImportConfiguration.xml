@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <object-views xmlns="http://axelor.com/xml/ns/object-views"
-              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-              xsi:schemaLocation="http://axelor.com/xml/ns/object-views http://axelor.com/xml/ns/object-views/object-views_7.0.xsd">
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://axelor.com/xml/ns/object-views http://axelor.com/xml/ns/object-views/object-views_7.0.xsd">
 
   <grid name="codecraft-import-configuration-grid" title="Imports"
-        model="com.axelor.apps.base.db.ImportConfiguration">
+    model="com.axelor.apps.base.db.ImportConfiguration">
     <field name="name"/>
     <field name="ccIsRunnable"/>
   </grid>
 
   <form name="codecraft-import-configuration-form" title="import.name"
-        model="com.axelor.apps.base.db.ImportConfiguration"
-        width="large">
+    model="com.axelor.apps.base.db.ImportConfiguration" width="large">
     <panel name="mainPanel">
       <field name="name" required="true"/>
       <field name="typeSelect"/>
       <field name="bindMetaFile" widget="binary-link" domain="self.fileType = 'text/xml'"
-             canNew="true" form-view="meta-files-form" grid-view="meta-files-grid" x-accept=".xml"/>
+        canNew="true" form-view="meta-files-form" grid-view="meta-files-grid" x-accept=".xml"/>
       <field name="dataMetaFile" widget="binary-link"
-             onSelect="action-attar-set-data-meta-file-domain" canNew="true" form-view="meta-files-form"
-             grid-view="meta-files-grid" x-accept=".csv, .xml, .zip"/>
+        onSelect="action-attar-set-data-meta-file-domain" canNew="true" form-view="meta-files-form"
+        grid-view="meta-files-grid" x-accept=".csv, .xml, .zip"/>
       <field name="ccIsRunnable"/>
     </panel>
   </form>

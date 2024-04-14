@@ -13,7 +13,8 @@
     <panel name="mainPanel">
       <field name="name" colSpan="12" required="true"/>
       <panel-related field="ccImportConfiguration"
-        form-view="codecraft-import-configuration-form" grid-view="codecraft-import-configuration-grid" colSpan="12"/>
+        form-view="codecraft-import-configuration-form"
+        grid-view="codecraft-import-configuration-grid" colSpan="12"/>
     </panel>
     <panel name="actionPanel" sidebar="true">
       <button name="importAllBtn" title="Import All" onClick=""/>
