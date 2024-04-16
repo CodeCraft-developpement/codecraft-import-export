@@ -6,3 +6,6 @@ axelor {
     title "codecraft-import-export"
     description "CodeCraft Import/export"
 }
+
+group = 'org.codecraft.apps'
+version = '1.0.0'
